@@ -1,1 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Calculator</title>
 
+    <script>
+
+        function calculate()
+        {
+            var num1 = parseInt(document.getElementById("num1").value);
+            var num2 = parseInt(document.getElementById("num2").value);
+            var op = document.getElementById("operation").value;
+
+            var result;
+
+            switch(op)
+            {
+                case "+":
+                    result = num1 + num2;
+                    break;
+
+                case "-":
+                    result = num1 - num2;
+                    break;
+
+                case "*":
+                    result = num1 * num2;
+                    break;
+
+                case "/":
+                    result = num1 / num2;
+                    break;
+            }
+
+            document.getElementById("answer").innerHTML =
+            "Result = " + result;
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <h2>Simple Calculator</h2>
+
+    Number 1:
+    <input type="text" id="num1">
+    <br><br>
+
+    Number 2:
+    <input type="text" id="num2">
+    <br><br>
+
+    Operation:
+    <select id="operation">
+        <option value="+">Addition (+)</option>
+        <option value="-">Subtraction (-)</option>
+        <option value="*">Multiplication (*)</option>
+        <option value="/">Division (/)</option>
+    </select>
+
+    <br><br>
+
+    <button onclick="calculate()">
+        Calculate
+    </button>
+
+    <h3 id="answer"></h3>
+
+</body>
+</html>
