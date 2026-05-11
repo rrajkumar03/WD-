@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personal Details</title>
+</head>
+<body>
+
+    <h1><b>Personal Details</b></h1>
+
+    <p><b>Name:</b> Aryan Pawar</p>
+
+    <p><i>Course:</i> Computer Engineering</p>
+
+    <p><u>College:</u> SPPU</p>
+
+    <p><mark>Email:</mark> aryan@gmail.com</p>
+
+    <p><strong>Mobile:</strong> 9876543210</p>
+
+</body>
+</html>
